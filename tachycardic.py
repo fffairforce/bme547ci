@@ -3,7 +3,7 @@ import difflib
 
 def main():
     test = is_tachycardic()
-    test_r = similarity()
+    test_r = similarity(test)
     output(test_r)
 
 
@@ -12,10 +12,6 @@ def user_type():
     return in_user
 
     
-def is_tachycardic(instring):
-    print(instring)
-
-
 def similarity(instring):
     return difflib.SequenceMatcher(None, str(instring).lower(), 
                                    "tachycardic").ratio
