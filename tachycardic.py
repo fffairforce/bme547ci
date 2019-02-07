@@ -5,8 +5,8 @@ def main():
     output(test_r)
 
 def user_type():
-    in = input('Please type only string: ')
-    return in
+    in_user = input('Please type only string: ')
+    return in_user
     
 def is_tachycardic(instring):
     print(instring)
