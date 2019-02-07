@@ -2,8 +2,9 @@ import difflib
 
 
 def main():
-    test = is_tachycardic()
-    test_r = similarity(test)
+    t = user_type()
+    test = is_tachycardic(t)
+    test_r = similarity(t)
     output(test_r)
 
 
