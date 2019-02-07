@@ -1,4 +1,2 @@
 def code():
-return
-
-
+    return
