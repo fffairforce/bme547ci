@@ -24,7 +24,7 @@ def is_tachycardic(n):
     else:
         return False
 
-   
+
 def output(n):
     if n == 1:
         print('exact match  \nsimilarity:{}'.format(round(n, 1)))
