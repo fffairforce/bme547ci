@@ -19,7 +19,7 @@ def similarity(n):
 
 def is_tachycardic(n):
     r = difflib.SequenceMatcher(None, str(n).lower(), "tachycardic").ratio()
-    if r > 0.7:
+    if r > 0.8:
         return True
     else:
         return False
@@ -27,11 +27,14 @@ def is_tachycardic(n):
 
 def output(n):
     if n == 1:
-        print('exact match  \nsimilarity:{}'.format(round(n, 1)))
-    if 0.7 < n < 1:
-        print('acceptble error  \nsimilarity:{}'.format(round(n, 1)))
-    if n < 0.7:
-        print('wrong input  \nsimilarity:{}'.format(round(n, 1)))
+        print('exact match \nTrue \nsimilarity:{}'.format(round(n, 1)))
+        return True
+    if 0.8 < n < 1:
+        print('acceptble error \nTrue \nsimilarity:{}'.format(round(n, 1)))
+        return True
+    if n < 0.8:
+        print('wrong input \nTrue \nsimilarity:{}'.format(round(n, 1)))
+        return False
 
 
 if __name__ == "__main__":
