@@ -1,7 +1,7 @@
 # bme547ci
 ## Unit Testing and Continuous Integration User Guide
 
-The program is designed to recognice and judge whether the input word matche the word "tachycardic" 
+The program is designed to recognize and judge whether the input word matches the word "tachycardic" 
 even if there is typos in the characters. The filter system can help docter better file and sort the
 correct database efficiently.
 
